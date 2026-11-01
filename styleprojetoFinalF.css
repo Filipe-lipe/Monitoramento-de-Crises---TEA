@@ -1,0 +1,67 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f8;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 {
+            color: #315b80;
+        }
+
+        .grupo {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        input[type="datetime-local"],
+        input[type="date"],
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #315b80;
+            color: white;
+            cursor: pointer;
+            margin: 5px 3px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .registro {
+            background: #eef3f8;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #315b80;
+        }
+
+        .excluir {
+            background: #b63838;
+        }

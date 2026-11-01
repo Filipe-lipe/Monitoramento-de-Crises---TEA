@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styleprojetoFinalF.css"/>
+    <title>Monitoramento de Crises - TEA</title>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Monitoramento de Crises - TEA</h1>
+
+    <form id="formRegistro">
+
+        <div class="grupo">
+            <h2>Data e horário</h2>
+            <input type="datetime-local" id="data" required>
+        </div>
+
+        <div class="grupo">
+            <h2> Possíveis Gatilhos </h2>
+            <label><input type="checkbox" name="gatilho" value="Ambiente muito barulhento "> Ambiente muito barulhento 🔊</label>
+            <label><input type="checkbox" name="gatilho" value="Luz forte "> Luz forte 💡</label>
+            <label><input type="checkbox" name="gatilho" value="Mudança de rotina "> Mudança de rotina 🔄</label>
+            <label><input type="checkbox" name="gatilho" value="Muitas pessoas ao redor "> Muitas pessoas ao redor 👥</label>
+            <label><input type="checkbox" name="gatilho" value="Fome "> Fome 🍎</label>
+            <label><input type="checkbox" name="gatilho" value="Sono insuficiente"> Sono insuficiente 😴</label>
+            <label><input type="checkbox" name="gatilho" value="Cansaço excessivo"> Cansaço excessivo 🥱</label>
+        </div>
+
+        <div class="grupo">
+            <h2>Sinais Observados </h2>
+            <label><input type="checkbox" name="sinal" value="Agitação corporal"> Agitação corporal 🏃</label>
+            <label><input type="checkbox" name="sinal" value="Isolamento"> Isolamento 🚪</label>
+            <label><input type="checkbox" name="sinal" value="Irritabilidade"> Irritabilidade 😠</label>
+            <label><input type="checkbox" name="sinal" value="Choro"> Choro 😢</label>
+            <label><input type="checkbox" name="sinal" value="Ansiedade"> Ansiedade 😟</label>
+        </div>
+
+        <div class="grupo">
+            <h2>Observações</h2>
+            <textarea id="observacao" rows="5" placeholder="Descreva como aconteceu a crise..."></textarea>
+        </div>
+
+        <button type="submit">Salvar registro</button>
+
+    </form>
+
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+    <h2>Consultar registros por período</h2>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+        <label style="flex: 1;">Data inicial:
+            <input type="date" id="inicio">
+        </label>
+
+        <label style="flex: 1;">Data final:
+            <input type="date" id="fim">
+        </label>
+    </div>
+
+    <button id="btnConsultar">Consultar período</button>
+    <button id="btnTodos" style="background: #555;">Mostrar todos</button>
+
+    <h2>Histórico de registros</h2>
+    <div id="historico"></div>
+
+</div>
+
+<script src="scriptFinalF.js"> 
+</script>
+
+</body>
+</html>
